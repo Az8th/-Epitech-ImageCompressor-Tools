@@ -19,11 +19,13 @@ Features
 
 Usage
 --
-`$> ./img2txt sourceImage destinationFile `
-`$> ./txt2img sourceText destinationImage`
-
 *The formats must be specified for  images.
 Using jpg format is not recommended as it lowers the quality of your output and cause colors to be modified. Please use png instead.*
+
+`$> ./img2txt sourceImage destinationFile`
+
+`$> ./txt2img sourceText destinationImage`
+
 Caution
 --
 This tools must **NOT** be pushed on your delivery repository, since it would be considered code stealing.
