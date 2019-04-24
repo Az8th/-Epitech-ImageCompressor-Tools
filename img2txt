@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+## made by Chris Chauvot (Az8th)
+
+from sys import argv, exit
+from PIL import Image
+
+if (len(argv) != 3):
+    exit(84)
+img = Image.open(argv[1])
+pixels = img.load()
+dest = open(argv[2], 'w')
+for x in range(img.size[0]):
+    for y in range(img.size[1]):
+        pix = pixels[(x, y)]
+        dest.write("({},{}) ({},{},{})\n".format(x, y, pix[0], pix[1], pix[2]))
+dest.close()
